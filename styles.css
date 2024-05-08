@@ -51,7 +51,8 @@ h5 {
 }
 p,
 li,
-th, button {
+th,
+button {
   font-size: 18px;
   font-family: "BasisGrotesk";
   line-height: 30px;
@@ -85,15 +86,15 @@ a:hover {
   text-decoration: underline;
 }
 
-#overview-section{
+#overview-section {
   display: flex;
   gap: 10%;
 }
-#tools{
+#tools {
   width: 25%;
   min-width: 230px;
 }
-.overview-text{
+.overview-text {
   margin-bottom: 0px;
   margin-top: 15px;
 }
@@ -118,14 +119,14 @@ a:hover {
   color: #74a57f;
 }
 
-#sketches{
+#sketches {
   display: flex;
   gap: 5%;
 }
-#sketch-writing{
+#sketch-writing {
   width: 45%;
 }
-#carousel-section{
+#carousel-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,7 +150,7 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
-#button-section{
+#button-section {
   margin-top: 10px;
   display: flex;
   gap: 15px;
@@ -157,7 +158,7 @@ a:hover {
 .button {
   background-color: rgb(228, 228, 228);
   border: none;
-  width:80px;
+  width: 80px;
   height: 30px;
   border-radius: 10px;
 }
@@ -176,35 +177,35 @@ a:hover {
   width: 80%;
   margin-right: 2%;
 }
-.lowfiSec{
+.lowfiSec {
   width: 100%;
 }
-.lofiFinal{
+.lofiFinal {
   width: 55%;
   max-width: 1000px;
 }
-.lofiFlow{
+.lofiFlow {
   width: 115%;
   max-width: 1000px;
 }
-#style-guide-sec{
+#style-guide-sec {
   display: flex;
   gap: 8%;
 }
-.styleGuide{
+.styleGuide {
   width: 100%;
 }
-#style-guide-text{
+#style-guide-text {
   width: 55%;
 }
-#style-guide-images{
+#style-guide-images {
   min-width: 250px;
   width: 45%;
 }
-#type-guide{
+#type-guide {
   border-radius: 15px 15px 0px 0px;
 }
-#color-guide{
+#color-guide {
   border-radius: 0px 0px 15px 15px;
 }
 .group {
@@ -217,7 +218,23 @@ video {
   min-width: 250px;
   border-radius: 15px;
 }
-.highfiImg{
+.highfiImg {
   width: 70%;
   border-radius: 15px;
+}
+#reflection-sec {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+}
+#group-pic-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* width: 50%; */
+}
+#group-pic {
+  width: 100%;
+  border-radius: 15px;
+  height: fit-content;
 }
