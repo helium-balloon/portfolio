@@ -80,32 +80,120 @@
 
     <div class="section">
       <h2>What are Collab Hours?</h2>
-      <p>
-        CS0320 is the software engineering course at Brown University. This
-        course doesn't have one-on-one debugging hours with TAs as other courses
-        do; rather, there are structured, TA-mentored collab sections where
-        students get debugging help—both from the TA and from peers. Other
-        courses have long queues to be able to meet with a TA one-on-one, but
-        through this system students can get help right away. The current system
-        is run by TAs without a program to aid the organization of the hours.
-      </p>
+      <div class="half-text-img">
+        <div>
+          <p>
+            CS0320 is the software engineering course at Brown University. This
+            course doesn't have one-on-one debugging hours with TAs as other
+            courses do; rather, there are structured, TA-mentored collab
+            sections where students get debugging help—both from the TA and from
+            peers. Other courses have long queues to be able to meet with a TA
+            one-on-one, but through this system students can get help right
+            away. The current system is run by TAs without a program to aid the
+            organization of the hours. Below are some key definitions for this
+            project:
+          </p>
+          <ul>
+            <li>
+              <b>Help Requester</b> - a student attending hours to obtain help
+              on a question or bug
+            </li>
+            <li>
+              <b>Debugging Partner</b> - a student providing help to students
+              attending hours
+            </li>
+            <li>
+              <b>Instructor</b> - a TA (Teaching Assistant) or course professor
+              who facilitates hours
+            </li>
+          </ul>
+        </div>
+        <div class="middle">
+          <img id="course-site" src="../assets/cs32/32-site.png" alt="" />
+        </div>
+      </div>
     </div>
 
     <div class="section">
       <h2>Research</h2>
-      <div id="research"></div>
+      <div id="research">
+        <p>
+          We started by conducting user interviews with the current course
+          instructor, TAs for the class, and students, as these would be the
+          users of our program. These interviews helped us to understand what
+          features would be most beneficial to develop as well as some stretch
+          goals that could be implemented later.
+        </p>
+        <p>
+          Completing user research interviews were incredibly useful to help our
+          team understand the priorities for the stakeholders involved in this
+          situation. We used this information gathered from user interviews to
+          create our project plan detailing our project specifications, scope,
+          and timeline. Over the course of 4 weeks, we planned to:
+        </p>
+        <ul>
+          <li>
+            Develop <b>concurrent algorithm</b> that matches debugging partners
+            automatically
+          </li>
+          <li>
+            Create <b>easy to use interfaces</b> for instructors, help
+            requesters, and debugging partners
+          </li>
+          <ul>
+            <li>
+              <b>Instructors:</b> Dashboard to view all debugging partners and
+              all help requesters as they enter the queues, as well as all
+              current pairs, to monitor the students that are getting help
+            </li>
+            <li>
+              <b>Help Requesters:</b> Dashboard where user can end their
+              debugging session once their debugging partner has finished
+              helping, so debugging partner is reassigned to other students
+            </li>
+            <li>
+              <b>Debugging Partners:</b> Dashboard with easy access to the name
+              of my help requester, the debugging recipe, and a way to escalate
+              a bug to a teaching assistant
+            </li>
+          </ul>
+          <li>
+            <b>Download records</b> of all debugging partners to keep track of
+            attendance
+          </li>
+          <li>Flag absent debugging partners</li>
+          <li>
+            <b>Implement timer</b> to let students know how long they are paired
+            so after 15 minutes, the pair can be escalated to the TA level
+          </li>
+          <li>
+            Notify TA when debugging partner needs to escalate a bug for
+            additional help
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="section">
       <h2>Process</h2>
+      <p>
+        We designed an initial UI sketch of our front-end interface to visualize
+        how the system flow would work from start to finish as a debugger and a
+        help requester.
+      </p>
       <div class="hor-section">
         <div class="group">
           <h5>Log-in Page:</h5>
-          <img alt="Lo-fi welcome page" src="../assets/cs32/lofi-welcome.png" />
+          <img
+            class="border-radius"
+            alt="Lo-fi welcome page"
+            src="../assets/cs32/lofi-welcome.png"
+          />
         </div>
         <div class="group">
           <h5>Instructor Page:</h5>
           <img
+            class="border-radius"
             alt="Lo-fi with instructor dashboard"
             src="../assets/cs32/lofi-instructor.png"
           />
@@ -113,6 +201,7 @@
         <div class="group">
           <h5>Role Selection:</h5>
           <img
+            class="border-radius"
             alt="Lo-fi showing choose role"
             src="../assets/cs32/lofi-choose-role.png"
           />
@@ -120,6 +209,7 @@
         <div class="group">
           <h5>Debugging Partner View:</h5>
           <img
+            class="border-radius"
             alt="Lo-fi Debugging Partner View"
             src="../assets/cs32/lofi-debugging-partner.png"
           />
@@ -127,6 +217,7 @@
         <div class="group">
           <h5>Help Requester Bug Type Selection:</h5>
           <img
+            class="border-radius"
             alt="Lo-fi with help requester bug type selection"
             src="../assets/cs32/lofi-help-requester-choose-bug-type.png"
           />
@@ -134,23 +225,55 @@
         <div class="group">
           <h5>Help Requester Page:</h5>
           <img
+            class="border-radius"
             alt="Lo-fi with help requester homepage"
             src="../assets/cs32/lofi-help-requester.png"
           />
         </div>
       </div>
+      <p>
+        Then, over the course of 4 weeks, we broke up the steps and developed
+        our application! I focused on both backend and frontend development in
+        this project.
+      </p>
     </div>
 
     <div class="section">
       <h2>Solution</h2>
+      <p>
+        We were able to complete all of the features we set out to complete as
+        seen below in the images of our website:
+      </p>
+      <ul>
+        <li><b>Dashboards</b> - Instructor, help requester, debug partner</li>
+        <li>
+          <b>Attendance</b> - Automatically collected from login, download
+        </li>
+        <li><b>Matching</b> - Based on position in queue</li>
+        <li>
+          <b>Debug Form</b> - Similar to Google form, saves to CSV on backend
+        </li>
+        <li>
+          <b>Escalation</b> - Available after 15 min, displays on instructor
+          dashboard
+        </li>
+        <li>
+          <b>Removal</b> - Remove debug partner or rematch/flag if partnered
+        </li>
+      </ul>
       <div class="hor-section">
         <div class="group">
           <h5>Log-in Page:</h5>
-          <img alt="Hi-fi welcome page" src="../assets/cs32/sol-welcome.png" />
+          <img
+            class="border-radius"
+            alt="Hi-fi welcome page"
+            src="../assets/cs32/sol-welcome.png"
+          />
         </div>
         <div class="group">
           <h5>Instructor Page:</h5>
           <img
+            class="border-radius"
             alt="Hi-fi with instructor dashboard"
             src="../assets/cs32/sol-instructor.png"
           />
@@ -158,6 +281,7 @@
         <div class="group">
           <h5>Role Selection:</h5>
           <img
+            class="border-radius"
             alt="Hi-fi showing choose role"
             src="../assets/cs32/sol-select-role.png"
           />
@@ -165,6 +289,7 @@
         <div class="group">
           <h5>Debugging Partner View:</h5>
           <img
+            class="border-radius"
             alt="Hi-fi Debugging Partner View"
             src="../assets/cs32/sol-debugging-partner.png"
           />
@@ -172,6 +297,7 @@
         <div class="group">
           <h5>Help Requester Bug Type Selection:</h5>
           <img
+            class="border-radius"
             alt="Hi-fi with help requester bug type selection"
             src="../assets/cs32/sol-choose-bug-type.png"
           />
@@ -179,6 +305,7 @@
         <div class="group">
           <h5>Help Requester Page:</h5>
           <img
+            class="border-radius"
             alt="Hi-fi with help requester homepage"
             src="../assets/cs32/sol-help-requester.png"
           />
@@ -189,14 +316,33 @@
     <div class="section">
       <h2>Learnings</h2>
       <div>
-        <p></p>
+        <p>
+          Throughout this process, I learned more about working well with a
+          team, through effective communication and asking for help from my
+          teammates. In addition, I got a lot more comfortable working with
+          React and working with a large body of code. I can now apply these
+          skills to new projects in the future.
+        </p>
       </div>
     </div>
 
     <div class="section">
       <h2>Role</h2>
+      <button class="tags">Full Stack Developer</button>
+      <button class="tags">Designer</button>
       <div>
-        <p></p>
+        <p>
+          In this project, I acted as a designer and full stack developer. At
+          the beginning of the project, I worked with my teammates to ideate and
+          design our project specifications. In our project plan, I laid out the
+          organization of our program by breaking down our goals into the
+          model-view-controller software pattern and describing what each module
+          will do and what data it will need access to. During the development
+          phase, I worked on the backend to create the feature that downloads
+          attendance and debugging form information. On the frontend, I
+          interacted with our backend using API calls to integrate the front end
+          and back end.
+        </p>
       </div>
     </div>
 

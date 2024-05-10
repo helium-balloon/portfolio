@@ -223,7 +223,7 @@ video {
 .margins {
   margin: 10px;
 }
-#title-p {
+.title-p {
   font-size: 25px;
 }
 
@@ -339,9 +339,22 @@ video {
   display: flex;
   align-items: center;
 }
-.nav-margins{
+.nav-margins {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #939ed5;
+}
+
+#course-site {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 10px;
 }
