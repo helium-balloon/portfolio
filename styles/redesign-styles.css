@@ -1,0 +1,49 @@
+.re-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.half-text-img{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+#remove-margin{
+    margin-top: 0;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+}
+
+.re-img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.webaim-bullets{
+    width: 200%;
+}
+
+.re-img3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-radius: 10px;
+}
+
+#solution-text{
+    width: 50%;
+}
+
+#text-left-margin{
+    margin-left: 20px;
+}

@@ -3,7 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Megan Ball!</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gothic A1"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/67ec8d9ce2.js"
       crossorigin="anonymous"
@@ -12,22 +22,39 @@
   <body id="website">
     <div id="navigation">
       <!-- change MB to what I want -->
-      <a href="landing.html"><h1>MB</h1></a>
-      <a href="landing.html"><h2>Work</h2></a>
-      <a href="about.html"><h2>About Me</h2></a>
-      <a href="../assets/Megan Ball Resume.docx (7).pdf"><h2>Resume</h2></a>
+      <div id="nav-left">
+        <a href="landing.html"><h1 class="margins">MB</h1></a>
+      </div>
+      <div id="nav-right">
+        <a href="landing.html"><h2 class="margins">Work</h2></a>
+        <a href="about.html"><h2 class="margins">About Me</h2></a>
+        <a href="../assets/Megan Ball Resume.docx (7).pdf"
+          ><h2 class="margins">Resume</h2></a
+        >
+      </div>
     </div>
     <div id="titleArea">
-      <h1>Hi, I'm Megan!</h1>
-      <p>
-        I'm a <b>front-end developer</b> dedicated to creating intuitive fluid
-        interfaces. As a second year student at Brown University studying
-        <b>computer science and economics</b>, my passion lies in my
-        interdisciplinary interests,
-        <b>combining business, technology, and design</b>. I'm always ready to
-        learn something new.
-      </p>
-      <img src="../assets/mb1.JPEG" alt="Image of Megan Ball" />
+      <div id="title-section">
+        <div>
+          <h1>Hi, I'm Megan!</h1>
+          <p id="title-p">
+            I'm a <b>front-end developer</b> dedicated to creating intuitive
+            fluid interfaces. As a second year student at Brown University
+            studying <b>computer science and economics</b>, my passion lies in
+            my interdisciplinary interests,
+            <b>combining business, technology, and design</b>. I'm always ready
+            to learn something new.
+          </p>
+        </div>
+        <div id="square-image">
+          <img
+            id="megan-image"
+            class="border-radius"
+            src="../assets/mb1.JPEG"
+            alt="Image of Megan Ball"
+          />
+        </div>
+      </div>
       <!-- arrow going down -->
     </div>
   </body>

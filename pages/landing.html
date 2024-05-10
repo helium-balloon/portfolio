@@ -3,7 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Megan Ball!</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/landing-styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gothic A1"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/67ec8d9ce2.js"
       crossorigin="anonymous"
@@ -12,73 +22,128 @@
   <body id="website">
     <div id="navigation">
       <!-- change MB to what I want -->
-      <a href="landing.html"><h1>MB</h1></a>
-      <a href="landing.html"><h2>Work</h2></a>
-      <a href="about.html"><h2>About Me</h2></a>
-      <a href="../assets/Megan Ball Resume.docx (7).pdf"><h2>Resume</h2></a>
+      <div id="nav-left">
+        <a href="landing.html"><h1 class="margins" id="logo-mb">MB</h1></a>
+      </div>
+      <div id="nav-right">
+        <a href="landing.html"><h2 class="margins">Work</h2></a>
+        <a href="about.html"><h2 class="margins">About Me</h2></a>
+        <a href="../assets/Megan Ball Resume.docx (7).pdf"
+          ><h2 class="margins">Resume</h2></a
+        >
+      </div>
     </div>
     <div id="titleArea">
-      <h1>Hi, I'm Megan!</h1>
-      <p>
-        I'm a <b>front-end developer</b> dedicated to creating intuitive fluid
-        interfaces. As a second year student at Brown University studying
-        <b>computer science and economics</b>, my passion lies in my
-        interdisciplinary interests,
-        <b>combining business, technology, and design</b>. I'm always ready to
-        learn something new.
-      </p>
-      <img src="../assets/mb1.JPEG" alt="Image of Megan Ball" />
+      <div id="title-section">
+        <div>
+          <h1>Hi, I'm Megan!</h1>
+          <p id="title-p">
+            I'm a <b>front-end developer</b> dedicated to creating intuitive
+            fluid interfaces. As a second year student at Brown University
+            studying <b>computer science and economics</b>, my passion lies in
+            my interdisciplinary interests,
+            <b>combining business, technology, and design</b>. I'm always ready
+            to learn something new.
+          </p>
+        </div>
+        <div id="square-image">
+          <img
+            id="megan-image"
+            class="border-radius"
+            src="../assets/mb1.JPEG"
+            alt="Image of Megan Ball"
+          />
+        </div>
+      </div>
       <!-- arrow going down -->
     </div>
     <div class="section">
-      <h2>Selected Works</h2>
+      <h1>Selected Works</h1>
       <div id="works">
-        <div class="work-card">
+        <div class="work-card margins">
           <a href="warp.html"
-            ><img src="../assets/warp black.png" alt="Warp Home Final Redesign"
+            ><img
+              class="work-img border-radius"
+              src="../assets/warp black.png"
+              alt="Warp Home Final Redesign"
           /></a>
-          <a href="warp.html"><h2>Warp Home</h2></a>
-          <p>One liner</p>
-          <button class="tags">Design</button>
-          <button class="tags">UIUX Research</button>
+          <a href="warp.html"
+            ><h2 class="no-underline text-hover-underline margins">
+              Warp Home
+            </h2></a
+          >
+          <p class="one-liner">UI/UX design for a startup homepage</p>
+          <div class="tags-line">
+            <button class="tags">Design</button>
+            <button class="tags">UIUX Research</button>
+          </div>
         </div>
-        <div class="work-card">
+        <div class="work-card margins">
           <a href="responsive-redesign.html"
             ><img
+              class="work-img border-radius"
               src="../assets/dentist black.png"
               alt="Responsive Redesign Dentistry Finished Website"
           /></a>
-          <a href="responsive-redesign.html"><h2>Responsive Redesign</h2></a>
-          <p>One liner</p>
-          <button class="tags">Design</button>
-          <button class="tags">Front End Engineering</button>
-          <button class="tags">UIUX Research</button>
-          <button class="tags">Figma</button>
+          <a href="responsive-redesign.html"
+            ><h2 class="no-underline text-hover-underline margins">
+              Responsive Redesign
+            </h2></a
+          >
+          <p class="one-liner">
+            Designing and developing an updated and accessible webpage
+          </p>
+          <div class="tags-line">
+            <button class="tags">Design</button>
+            <button class="tags">Front End Engineering</button>
+            <button class="tags">UIUX Research</button>
+            <button class="tags">Figma</button>
+          </div>
         </div>
-        <div class="work-card">
+        <div class="work-card margins">
           <a href="cs32.html"
             ><img
+              class="work-img border-radius"
               src="../assets/collab black.png"
               alt="Image of Collab Section Manager Website"
           /></a>
-          <a href="cs32.html"><h2>Collaboration Manager</h2></a>
-          <p>One liner</p>
-          <button class="tags">Design</button>
-          <button class="tags">Front End Engineering</button>
-          <button class="tags">Back End Engineering</button>
-          <button class="tags">User Research</button>
+          <a href="cs32.html"
+            ><h2 class="no-underline text-hover-underline margins">
+              Collaboration Manager
+            </h2></a
+          >
+          <p class="one-liner">
+            Designing and developing a platform to streamline office hours
+          </p>
+          <div class="tags-line">
+            <button class="tags">Design</button>
+            <button class="tags">Front End Engineering</button>
+            <button class="tags">Back End Engineering</button>
+            <button class="tags">User Research</button>
+          </div>
         </div>
       </div>
 
-      <div id="footer">
-        <div>
-          <i class="fa-brands fa-linkedin fa-xl"></i>
+      <div role="footer" id="footer">
+        <div id="footer-logos">
+          <a href="https://www.linkedin.com/in/megan-ball15/"
+            ><i class="fa-brands fa-linkedin fa-2x margins"></i
+          ></a>
+          <a href="mailto: megan_ball@brown.edu"
+            ><i class="fa-solid fa-envelope fa-2x margins"></i
+          ></a>
+          <a href="https://github.com/helium-balloon"
+            ><i class="fa-brands fa-github fa-2x margins"></i
+          ></a>
+
+          <!-- <div><i class="fa-brands fa-linkedin fa-xl"></i></div>
+          <div><i class="fa-solid fa-envelope fa-xl"></i></div>
+          <div><i class="fa-brands fa-github fa-xl"></i></div> -->
+
           <!-- <i class="fa-regular fa-envelope"></i> -->
-          <i class="fa-solid fa-envelope fa-xl"></i>
-          <i class="fa-brands fa-github fa-xl"></i>
         </div>
-        <div>
-          <a href="landing.html"><h2>Return To Top</h2></a>
+        <div id="return-to-top">
+          <a href="landing.html"><h4>Return To Top</h4></a>
         </div>
       </div>
     </div>
