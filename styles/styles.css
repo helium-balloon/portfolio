@@ -218,6 +218,7 @@ video {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  background-color: white;
   /* justify-content: space-evenly; */
 }
 .margins {
@@ -372,6 +373,12 @@ video {
   font-size: 30px;
   text-align: left;
 }
-.margin-left{
+.margin-left {
   margin-left: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
